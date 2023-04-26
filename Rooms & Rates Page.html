@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body {
+                font-family:Georgia;
+                background-color:darkslategray;
+                height: 2270px;
+            }
+
+            .modal {
+                display: none; /* Hidden by default */
+                position: fixed; /* Stay in place */
+                z-index: 1; /* Sit on top */
+                padding-top: 100px; /* Location of the box */
+                left: 0;
+                top: 0;
+                width: 100%; /* Full width */
+                height: 100%; /* Full height */
+                overflow: auto; /* Enable scroll if needed */
+                background-color: rgb(0,0,0); /* Fallback color */
+                background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            }
+
+/* Modal Content */
+            .modal-content {
+                background-color: #fefefe;
+                margin: auto;
+                padding: 20px;
+                border: 1px solid #888;
+                width: 30%;
+                border-radius: 10px;
+            }
+
+/* The Close Button */
+            .close {
+                color: #aaaaaa;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+            }
+
+            .close:hover,
+            .close:focus {
+                color: #000;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+            #address, #phone-num, #email{
+                margin-bottom: 3%;
+                border-radius: 10px;
+                width: 80%;
+                height: 35px;
+                border: solid 2px;
+            }
+            label{
+               font-family: Georgia;
+               font-size: 25px;
+               color: #000;
+            }
+             .button-div{
+               text-align: center;
+    
+            }
+
+           .button-div button{
+               background-color: lightblue;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <div class="logo"><a href="index.html" class="logo">Hotel Transylvania</a></div>
+            <nav class="nav-bar">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="Rooms & Rates Page.html" class="active">Rooms & Rates Page</a></li>
+                    <li><a href="Amenities.html" class="active">Amenities</a></li>
+                    <li><a href="Location.html" class="active">Location</a></li>
+                    <li><a href="Contact.html" class="active">Contact</a></li>
+
+                </ul>
+            </nav>
+        </header>
+
+        <div>
+            <img src="image.jpg" style="width: 100%; height: 500px;">
+        </div>
+
+
+
+
+
+
+
+
+        <div class="roomsRates-main-div">
+            <div class="photo-description-div">
+                <div class="photo-div">
+                   <img src="regular.jpg" class="rooms-image">
+                </div>
+
+                <div class="description-div">
+                    <h3><i>Regular Rooms</i></h3>
+                    <p class="description">The regular modern rooms comprises twin beds, cable tv, comfort room. The room is  air-conditioned and spacious. 
+                        A hygiene kit is provided in every room.</p><br>
+                    <p class="price">₱3,000.00</p>
+
+                    <div class="button-div">
+                        <button type="button" class="rooms-button" id="myBtn">Reserve / Inquiries</button>
+                    </div>
+
+                    <!-- rooms-button -->
+                    <div id="myModal" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <form id="contact-form">
+                                <label for="address">Address:</label><br>
+                                <input type="text" id="address" name="address"><br>
+                            
+                                <label for="phone-num">Phone Number:</label><br>
+                                <input type="text" id="phone-num" name="phone-num"><br>
+                            
+                                <label for="email">Email:</label><br>
+                                <input type="text" id="email" name="email"><br>
+                              </form>
+                                
+                              <div class="button-div">
+                                  <button type="button" class="contact-button">Confirm</button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div class="roomsRates-main-div">
+            <div class="photo-description-div">
+                <div class="photo-div">
+                   <img src="room1.jpg" class="rooms-image">
+                </div>
+
+                <div class="description-div">
+                    <h3><i>Ocean View Rooms</i></h3>
+                    <p class="description">Relax with the luxurious oceanfront rooms. Sight the stunning sunset and beach landscapes. 
+                        Some rooms have a bathtub with a heater and refrigerator.</p><br>
+                    <p class="price">₱ 5,999.00</p>
+
+                    <div class="button-div">
+                        <button type="button" class="rooms-button" id="myBtn2">Reserve / Inquiries</button>
+                    </div>
+
+                    <!-- rooms-button -->
+                    <div id="myModal" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <form id="contact-form">
+                                <label for="address">Address:</label><br>
+                                <input type="text" id="address" name="address"><br>
+                            
+                                <label for="phone-num">Phone Number:</label><br>
+                                <input type="text" id="phone-num" name="phone-num"><br>
+                            
+                                <label for="email">Email:</label><br>
+                                <input type="text" id="email" name="email"><br>
+                              </form>
+                                
+                              <div class="button-div">
+                                  <button type="button" class="contact-button">Confirm</button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <table border="1" class="RoomsAndRatesTable" style="width: 680px;
+        background-color: #006666;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: Georgia;">
+            <tr>
+                <th>
+                    Regular Room
+
+                </th>
+                <th>
+                    Ocean View Room
+
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <img src="icons8-bed-50.png">
+                    <p>Twin Size Bed</p>
+
+                </td>
+                <td>
+                    <img src="icons8-bed-50.png">
+                    <p>Twin Size Bed</p>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img src="icons8-air-conditioner-50.png">
+                    <p>Air Conditioner</p>
+
+                </td>
+                <td>
+                    <img src="icons8-air-conditioner-50.png">
+                    <p>Air Conditioner</p>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="icons8-tv-50.png">
+                    <p>Cable TV</p>
+
+                </td>
+                <td>
+                    <img src="icons8-tv-50.png">
+                    <p>Cable TV</p>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img src="icons8-breakfast-48.png">
+                    <p>Breakfast</p>
+
+                </td>
+                <td>
+                    <img src="icons8-breakfast-48.png">
+                    <p>Breakfast</p>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img src="icons8-medical-bag-50.png">
+                    <p>Hygiene Kit</p>
+
+                </td>
+                <td>
+                    <img src="icons8-medical-bag-50.png">
+                    <p>Hygiene Kit</p>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img src="icons8-toilet-80.png">
+                    <p>Comfort Room</p>
+
+                </td>
+                <td>
+                    <img src="icons8-toilet-80.png">
+                    <p>Comfort Room</p>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img src="icons8-wi-fi-50.png">
+                    <p>Wi-Fi</p>
+
+                </td>
+                <td>
+                    <img src="icons8-wi-fi-50.png">
+                    <p>Wi-Fi</p>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    
+                 
+
+                </td>
+                <td>
+                    <img src="icons8-smart-door-32.png">
+                    <p>Smart door</p>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    
+                    
+
+                </td>
+                <td>
+                    <img src="icons8-refrigerator-64.png">
+                    <p>Refrigerator</p>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    
+                   
+
+                </td>
+                <td>
+                    <img src="icons8-bathtub-32.png">
+                    <p>Bathtub</p>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img src="icons8-peso-symbol-24.png">
+                    <p>₱3,000.00</p>
+
+                </td>
+                <td>
+                    <img src="icons8-peso-symbol-24.png">
+                    <p>5,999.00</p>
+
+                </td>
+            </tr>
+
+        </table>
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- FOOTER -->
+<div class="footer" style="background-color: white;">
+    <div class="container">
+       <div class="column" style="background-color: #018181;">
+        <h1>Sunny Skies Beach Resort​</h1>
+            <p>It is the first integrated tourist hub in the Philippines which started its commercial operations on August 2009. It is fast shaping up to become the most exciting destination in the country. Sunny Skies Beach Resort is the first and only integrated leisure and resort property in the Philippines that combines privately‐operated gaming facilities with other leisure, entertainment, hotel and dining amenities.</p>
+        
+       </div>
+       <div class="column">
+        <h2><a href="index.html">Home</a></h2>
+            <a href="https://www.facebook.com/Morongstar" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/morongstar?lang=en" class="fa fa-twitter"></a>
+       </div>
+       <div class="column" style="background-color: #018181;">
+         <h2> Copyright Reserved </h2>
+         <p>Sunny Skies Beach Resort is an integrated resort, located in Newport City, opposite Ninoy Aquino International Airport (NAIA) Terminal 3, in Pasay, Metro Manila, Philippines. The resort is owned and operated by Travellers International Hotel Group, Inc.</p>
+       </div>
+    </div>
+</div> 
+
+
+
+
+    
+        <script>
+            var modal = document.getElementById("myModal");
+            var btn = document.getElementById("myBtn");
+            var btn2 = document.getElementById("myBtn2");
+            var span = document.getElementsByClassName("close")[0];
+            var confirm = document.getElementsByClassName("contact-button")[0];
+
+
+            btn.onclick = function() {
+              modal.style.display = "block";
+            }
+
+            btn2.onclick = function() {
+              modal.style.display = "block";
+            }
+
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+
+            confirm.onclick = function() {
+              modal.style.display = "none";
+            }
+
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+
+            
+
+        </script>
+
+    </body>
+</html>

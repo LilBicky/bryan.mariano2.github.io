@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+        <style>
+             .modal {
+                display: none; /* Hidden by default */
+                position: fixed; /* Stay in place */
+                z-index: 1; /* Sit on top */
+                padding-top: 100px; /* Location of the box */
+                left: 0;
+                top: 0;
+                width: 100%; /* Full width */
+                height: 100%; /* Full height */
+                overflow: auto; /* Enable scroll if needed */
+                background-color: rgb(0,0,0); /* Fallback color */
+                background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            }
+
+/* Modal Content */
+            .modal-content {
+                background-color: #fefefe;
+                margin: auto;
+                padding: 20px;
+                border: 1px solid #888;
+                width: 30%;
+                border-radius: 10px;
+            }
+
+/* The Close Button */
+            .close {
+                color: #aaaaaa;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+            }
+
+            .close:hover,
+            .close:focus {
+                color: #000;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+            #address, #phone-num, #email{
+                margin-bottom: 3%;
+                border-radius: 10px;
+                width: 80%;
+                height: 35px;
+                border: solid 2px;
+            }
+            label{
+               font-family: Georgia;
+               font-size: 25px;
+               color: #000;
+            }
+             .button-div{
+               text-align: center;
+    
+            }
+
+           .button-div button{
+               background-color: lightblue;
+            }
+
+            .Welcome-div{
+                text-align: center;
+                font-family: Georgia;
+                font-size: 30px;
+                margin-left: 10%;
+                margin-right: 10%;
+                margin-top: 5%;
+            }
+            .Welcome-div hr{
+                width: 30%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .Welcome-div hr, h1, p{
+                margin-bottom: 3%;
+            }
+
+            .ThreeColumns{
+                width: 100%;
+                text-align: center;
+                font-size: 24px;
+                display: flex;
+                
+            }
+
+            .Columns-div{
+                float: left;
+                width: 500px;
+                border: 3px solid;
+                border-color: bisque;  
+                height: 200px;
+                margin: 1%;
+
+                
+            }
+
+            .Experience-div{
+                text-align: center;
+                font-size: 26px;
+                padding-top: 3%;
+            }
+
+            .Columns-div p{
+                margin: 5%;
+                
+            }
+
+            .Columns-div h3{
+                margin-top: 4%;           
+            }
+
+        /* The hero image */
+.hero-image {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("heroimage.jpg");
+  
+    /* Set a specific height */
+    height: 180vh;
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  /* Place text in the middle of the image */
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }        
+  body{
+    margin: 0;
+    /* dito ung space ng footer*/
+    padding-bottom:10%;
+  }
+
+
+
+
+  .AboutUs-div{
+    display: flex;
+    width: 100%;
+    height: 680px;
+    margin-top: 1%;
+
+  }
+
+  .AboutUs-description-div{
+    width: 50%;
+    text-align: left;
+    font-size: 24px;
+    background-color: rgb(32, 24, 24);
+  }
+
+  .AboutUs-description-div hr, h4, h1{
+    margin:2%;
+  }
+
+  .AboutUs-p{
+    margin: 2%;
+  }
+
+  .AboutUs-description-div hr{
+    width: 20%;
+  }
+
+
+  .AboutUs-resortImg-div{
+      float: left;
+      width: 50%;
+
+  }
+
+  .AboutUs-resortImg-div img{
+      width: 100%;
+      height: 100%;
+  }
+        </style>
+
+    </head>
+
+    <body>
+        <header>
+            <div class="logo"><a href="index.html" class="logo">Sunny Skies Beach Resort</a></div>
+            <nav class="nav-bar">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="Rooms & Rates Page.html" class="active">Rooms & Rates Page</a></li>
+                    <li><a href="Amenities.html" class="active">Amenities</a></li>
+                    <li><a href="Location.html" class="active">Location</a></li>
+                    <li><a href="Contact.html" class="active">Contact</a></li>
+
+                </ul>
+            </nav>
+        </header>
+
+        <div class="hero-image">
+            <div class="hero-text">
+                <div class="Welcome-div">
+                    <h1>Welcome To Sunny Skies Beach Resort​</h1>
+                    <hr>
+                    <p>Sunny Skies Beach Resort is your haven to relax and enjoy. Witness the beautiful serenity of the beach, fresh breeze and the calming sound of the waves. 
+                        Pamper yourself with luxury rooms and delicious meals. Sunny Skies Beach Resort is located in Morong, Bataan, which is 3 hours away from the capital city.</p>
+        
+                </div>
+                
+                <section class="Experience-section">
+                    <div class="Experience-div">
+                        <h2>Experiences</h2>
+                    </div>
+            
+                    <div class="ThreeColumns">
+                        <div class="Columns-div">
+                            <h3>Fun Dive</h3>
+                            <p>Try something new! Explore the fun diving together with our professional divers. 
+                                The resort offers a 16ft pool diving experience.</p>
+            
+                        </div>
+            
+                        <div class="Columns-div">
+                            <h3>Island Hopping</h3>
+                            <p>You can’t miss the island hopping in Sunny Skies Beach Resort! Discover white sands, beautiful waters, and great attractions.</p>
+                            
+                        </div>
+            
+                        <div class="Columns-div">
+                            <h3>Beach Party</h3>
+                            <p>Get entertained by various artists. Join the fun at Sunny Skies Beach Resort!</p>
+                            
+                        </div>
+            
+                    </div>
+        
+                </section>
+
+                <div class="AboutUs-div">
+                    <div class="AboutUs-description-div">
+                        <h4>Sunny Skies Beach Resort</h4>
+                        <h1>About Us</h1>
+                        <hr>
+                        <p class="AboutUs-p">
+                            Dubbed as “The Sunniest Place in Bataan,” Morong star Hotel and 
+                            Resort boasts elegant and modern rooms designed to give you an indulgent stay. <br>
+                            <br>
+                            Started from a humble beginning, the place was just a family vacation place. 
+                            Later on, it was developed and became a private resort with cabanas. The resort was first called ”Morning Star Beach Resort.” Years passed, 
+                            thousands of tourists enjoyed the clean shoreline and restful ambiance of the place. <br>
+                            <br>
+                            The development went on, and now the resort is known as Morongstar Hotel and Resort 
+                            as it offers luxurious rooms some room offers a generous private balcony where one can relax and soak in the view and the stunning sunsets near the West Philippine Sea. 
+                            Everything in the place is planned and built to pamper you. <br>
+                            <br>
+                            You may also experience various activities and adventures. 
+                            Aside from that, the hotel serves cuisines that you’ll surely enjoy.<br>
+                        </p>
+        
+                    </div>
+                        
+        
+                    <div class="AboutUs-resortImg-div">
+                        <img src="resort.jpg">
+        
+                    </div>
+                </div>
+                
+
+                <div class="button-div">
+                    <button type="button" class="rooms-button" id="myBtn">Reserve / Inquiries</button>
+                </div>
+        
+                <!-- rooms-button -->
+                <div id="myModal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <form id="contact-form">
+                            <label for="address">Address:</label><br>
+                            <input type="text" id="address" name="address"><br>
+                        
+                            <label for="phone-num">Phone Number:</label><br>
+                            <input type="text" id="phone-num" name="phone-num"><br>
+                        
+                            <label for="email">Email:</label><br>
+                            <input type="text" id="email" name="email"><br>
+                          </form>
+                            
+                          <div class="button-div">
+                              <button type="button" class="contact-button">Confirm</button>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- ILAGAY MO TO SA HERO IMAGE SA GITNA -->
+
+<div class="footer" style="background-color: white;">
+    <div class="container">
+       <div class="column" style="background-color: #018181;">
+        <h1>Sunny Skies Beach Resort​</h1>
+            <p>It is the first integrated tourist hub in the Philippines which started its commercial operations on August 2009. It is fast shaping up to become the most exciting destination in the country. Sunny Skies Beach Resort is the first and only integrated leisure and resort property in the Philippines that combines privately‐operated gaming facilities with other leisure, entertainment, hotel and dining amenities.</p>
+        
+       </div>
+       <div class="column">
+        <h2><a href="index.html">Home</a></h2>
+            <a href="https://www.facebook.com/Morongstar?_rdc=1&_rdr" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/morongstar?lang=en" class="fa fa-twitter"></a>
+       </div>
+       <div class="column" style="background-color: #018181;">
+         <h2> Copyright Reserved </h2>
+         <p>Sunny Skies Beach Resort is an integrated resort, located in Newport City, opposite Ninoy Aquino International Airport (NAIA) Terminal 3, in Pasay, Metro Manila, Philippines. The resort is owned and operated by Travellers International Hotel Group, Inc.</p>
+       </div>
+    </div>
+</div> 
+
+
+
+
+
+        <script>
+            var modal = document.getElementById("myModal");
+            var btn = document.getElementById("myBtn");
+            var span = document.getElementsByClassName("close")[0];
+            var confirm = document.getElementsByClassName("contact-button")[0];
+
+
+            btn.onclick = function() {
+              modal.style.display = "block";
+            }
+
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+
+            confirm.onclick = function() {
+              modal.style.display = "none";
+            }
+
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+        </script>
+        
+    </body>
+</html>
